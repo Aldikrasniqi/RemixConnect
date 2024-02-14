@@ -1,38 +1,29 @@
-# Welcome to Remix!
+# Welcome to the ConnectRemix real time chat application
+Now you'll need to add some configuration for supabase.
 
-- [Remix Docs](https://remix.run/docs)
+### DIY
+cd routetoproject
+npm install
+
+Make sure to create .env file with following properties in it
+
+- `SUPABASE_URL=https://yoursupabaseurl.supabase.co`
+- `SUPABASE_ANON_KEY=youranonkey`
+
+You can find these keys in your supabase account.
+
+In your pathfile add `supabase gen types typescript --project-id yoursupabaseurl > db_types.ts`
 
 ## Development
 
-From your terminal:
-
+From your local dev:
 ```sh
 npm run dev
 ```
 
 This starts your app in development mode, rebuilding assets on file changes.
 
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
 Then run the app in production mode:
-
 ```sh
 npm start
 ```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`

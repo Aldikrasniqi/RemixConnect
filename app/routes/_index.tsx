@@ -42,11 +42,11 @@ export default function Index() {
     inputRef.current.value = '';
   }
   return (
-    <div className="max-w-sm mx-auto flex flex-col justify-between h-screen overflow-x-hidden">
+    <div className="max-w-sm mx-auto flex flex-col justify-between h-screen overflow-x-hidden dark:bg-[#152033] bg-[#EDEDED]">
       <Login />
       <SyncMessages serverMessages={messages} />
       <Form method="post">
-        <div className="flex justify-center items-center gap-2 bg-[#0F1828] p-2">
+        <div className="flex justify-center items-center gap-2 p-2">
           <input
             type="text"
             name="message"
